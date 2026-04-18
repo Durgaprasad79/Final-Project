@@ -373,8 +373,9 @@ class SubmitComplaintView(APIView):
             if is_valid:
                 logger.info(f"AI validation successful for complaint {complaint.id}: {len(data_list)} issue(s) detected")
                 return {
-                    'is_valid': True,
-                    'data': data_list
+                    'is_valid': result.get('is_valid', False),
+                    'data': result.get('data', []), # This is the list of issues
+                    'error_message': result.get('error')
                 }
             else:
                 logger.warning(f"AI validation failed for complaint {complaint.id}: {error_message}")
@@ -394,7 +395,11 @@ class SubmitComplaintView(APIView):
             # Log unexpected errors but fall back to mock validation
             logger.error(f"Unexpected error calling AI service for complaint {complaint.id}: {str(e)}")
             logger.info("Falling back to mock AI validation due to unexpected error")
-            return {"error": str(e)}
+            return {
+                'is_valid': False,
+                'data': [],
+                'error_message': f"Connection to AI failed: {str(e)}"
+            }
 
 
 @method_decorator(csrf_exempt, name='dispatch')

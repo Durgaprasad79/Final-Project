@@ -12,12 +12,12 @@ from shapely.geometry import Point, shape
 # Configure logger
 logger = logging.getLogger(__name__)
 
-# Path to GeoJSON file
+# Path to GeoJSON file (Ensure your new file is saved as wards.geojson in this path)
 GEOJSON_PATH = Path(__file__).parent.parent / "data" / "wards.geojson"
 
 
 class WardMapper:
-    """Service for mapping GPS coordinates to AMC wards using GeoJSON polygons."""
+    """Service for mapping GPS coordinates to Vijayawada wards using GeoJSON polygons."""
     
     def __init__(self):
         """Initialize WardMapper by loading GeoJSON data."""
@@ -39,12 +39,12 @@ class WardMapper:
             try:
                 geometry = feature.get("geometry")
                 properties = feature.get("properties", {})
-                ward_name_raw = properties.get("Name", "")
                 
-                # Parse ward name (format: "48 RAMOL HATHIJAN" -> extract ward number and name)
-                parts = ward_name_raw.split(" ", 1)
-                ward_no = parts[0] if parts else ""
-                ward_name = parts[1] if len(parts) > 1 else ward_name_raw
+                # Vijayawada GeoJSON uses 'WARD_NO' directly 
+                ward_no = str(properties.get("WARD_NO", "Unknown"))
+                
+                # Since there is no separate name field, we create a display name
+                ward_name = f"Ward {ward_no}"
                 
                 # Create polygon from geometry
                 polygon = shape(geometry)
@@ -53,7 +53,7 @@ class WardMapper:
                     "polygon": polygon,
                     "ward_no": ward_no,
                     "ward_name": ward_name,
-                    "raw_name": ward_name_raw
+                    "raw_name": ward_no
                 })
                 
             except Exception as e:

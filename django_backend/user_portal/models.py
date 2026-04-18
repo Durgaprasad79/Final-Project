@@ -112,14 +112,14 @@ class CivicComplaint(models.Model):
     
     # Geographic coordinates
     latitude = models.DecimalField(
-        max_digits=10,
-        decimal_places=7,
+        max_digits=20,
+        decimal_places=15,
         help_text="Latitude coordinate (GPS)"
     )
     
     longitude = models.DecimalField(
-        max_digits=10,
-        decimal_places=7,
+        max_digits=20,
+        decimal_places=15,
         help_text="Longitude coordinate (GPS)"
     )
     
