@@ -36,7 +36,7 @@ class FastAPIClient:
     
     def __init__(self):
         """Initialize FastAPI client with base URL from environment."""
-        self.base_url = os.getenv('FASTAPI_BASE_URL', 'http://localhost:8000')
+        self.base_url = os.getenv('FASTAPI_BASE_URL', 'http://localhost:8080')
         if not self.base_url:
             raise FastAPIError("FASTAPI_BASE_URL environment variable not set")
         

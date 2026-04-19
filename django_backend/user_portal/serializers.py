@@ -134,15 +134,15 @@ class PhotoCaptureSerializer(serializers.Serializer):
     )
     
     latitude = serializers.DecimalField(
-        max_digits=10,
-        decimal_places=7,
+        max_digits=20,
+        decimal_places=15,
         required=True,
         help_text="GPS latitude coordinate"
     )
     
     longitude = serializers.DecimalField(
-        max_digits=10,
-        decimal_places=7,
+        max_digits=20,
+        decimal_places=15,
         required=True,
         help_text="GPS longitude coordinate"
     )

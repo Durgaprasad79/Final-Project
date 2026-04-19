@@ -255,14 +255,14 @@ class TicketCompletion(models.Model):
     
     # Contractor's location at time of photo upload
     contractor_latitude = models.DecimalField(
-        max_digits=10,
-        decimal_places=7,
+        max_digits=20,
+        decimal_places=15,
         help_text="Contractor's GPS latitude when uploading photo"
     )
     
     contractor_longitude = models.DecimalField(
-        max_digits=10,
-        decimal_places=7,
+        max_digits=20,
+        decimal_places=15,
         help_text="Contractor's GPS longitude when uploading photo"
     )
     
