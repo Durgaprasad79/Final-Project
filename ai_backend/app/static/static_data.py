@@ -1,161 +1,190 @@
 WARD_DATA = [
+
   {
     "ward_no": "002",
-    "ward_name": "Dariapur",
-    "ward_address": "Dariapur Ward Office, Nr. Kuti Masjid, Nr. Rupapari Ni pol, Dariapur Darawaja, Vijayawada",
-    "ward_admin_name": "Vinod Patel",
-    "ward_admin_no": "9979605703",
+    "ward_name": "Benz Circle",
+    "ward_address": "Benz Circle Ward Office, Near Benz Circle Flyover, MG Road, Vijayawada, Andhra Pradesh - 520010",
+    "ward_admin_name": "Srinivas Rao",
+    "ward_admin_no": "9876543210",
     "ward_timing": "9.00 am to 4.30 pm",
     "ward_zone": "central_zone"
   },
+
   {
     "ward_no": "018",
-    "ward_name": "Nikol",
-    "ward_address": "Nikol Ward Office, Jinal Bunglows, D-Mart Road, Nikol, Vijayawada",
-    "ward_admin_name": "Jay Zalavadiya",
-    "ward_admin_no": "9274395059",
+    "ward_name": "Patamata",
+    "ward_address": "Patamata Ward Office, Near Patamata Police Station, Patamata Main Road, Vijayawada, Andhra Pradesh - 520010",
+    "ward_admin_name": "Ramesh Kumar",
+    "ward_admin_no": "9123456789",
     "ward_timing": "9.00 am to 4.30 pm",
     "ward_zone": "east_zone"
   },
+
   {
     "ward_no": "026",
-    "ward_name": "Gota",
-    "ward_address": "Gota Ward Office, Nr.ADB Water Tank, Science City Road, Sola, Vijayawada",
-    "ward_admin_name": "Jaydeep Pandya",
-    "ward_admin_no": "9726415802",
+    "ward_name": "Gunadala",
+    "ward_address": "Gunadala Ward Office, Near Gunadala Mary Matha Shrine, Eluru Road, Vijayawada, Andhra Pradesh - 520004",
+    "ward_admin_name": "Prasad Naidu",
+    "ward_admin_no": "9012345678",
     "ward_timing": "9.00 am to 4.30 pm",
-    "ward_zone": "north_west_zone"
+    "ward_zone": "north_zone"
   },
+
   {
-    "ward_no": "051",
-    "ward_name": "Vatva",
-    "ward_address": "Vatva Ward Office, Beside Kashiba hospital,Vatva Gam, Vijayawada",
-    "ward_admin_name": "Pritesh Chaudhari",
-    "ward_admin_no": "9274395056",
+    "ward_no": "12",
+    "ward_name": "Ashok Nagar",
+    "ward_address": "FMPF+VGR, Santhi School St, New RTC Colony, Ayyappa Nagar, Vijayawada, Andhra Pradesh 520007",
+    "ward_admin_name": "Durga Prasad",
+    "ward_admin_no": "8520912757",
     "ward_timing": "9.00 am to 4.30 pm",
     "ward_zone": "south_zone"
   }
-]
 
+]
 CONTRACTOR_DATA = [
+
   {
     "ward_no": "002",
     "contractors": [
-      { "contractor_name": "Jaimin Shah",
-       "mobile_number": "9000000201",
+      {
+        "contractor_name": "Ravi Kumar",
+        "mobile_number": "9876500201",
         "jobs_pending": 3,
-        "rating": 4 
+        "rating": 4
       },
-      { "contractor_name": "Rahul Mehta",
-       "mobile_number": "9000000202",
+      {
+        "contractor_name": "Srinivas Rao",
+        "mobile_number": "9876500202",
         "jobs_pending": 6,
-        "rating": 5 
+        "rating": 5
       },
-      { "contractor_name": "Suresh Patel",
-       "mobile_number": "9000000203",
+      {
+        "contractor_name": "Kiran Babu",
+        "mobile_number": "9876500203",
         "jobs_pending": 2,
-        "rating": 3 
+        "rating": 3
       },
-      { "contractor_name": "Nitin Joshi",
-       "mobile_number": "9000000204",
+      {
+        "contractor_name": "Mahesh Naidu",
+        "mobile_number": "9876500204",
         "jobs_pending": 8,
-        "rating": 4 
+        "rating": 4
       },
-      { "contractor_name": "Kunal Desai",
-       "mobile_number": "9000000205",
+      {
+        "contractor_name": "Venkatesh Reddy",
+        "mobile_number": "9876500205",
         "jobs_pending": 1,
-        "rating": 5 
+        "rating": 5
       }
     ]
   },
+
   {
     "ward_no": "018",
     "contractors": [
-      { "contractor_name": "Vishal Parmar",
-       "mobile_number": "9000001801",
+      {
+        "contractor_name": "Prasad Kumar",
+        "mobile_number": "9876501801",
         "jobs_pending": 4,
-         "rating": 4 
+        "rating": 4
       },
-      { "contractor_name": "Rakesh Solanki",
-       "mobile_number": "9000001802",
+      {
+        "contractor_name": "Ramesh Babu",
+        "mobile_number": "9876501802",
         "jobs_pending": 7,
-         "rating": 3 
+        "rating": 3
       },
-      { "contractor_name": "Ankit Verma",
-       "mobile_number": "9000001803",
+      {
+        "contractor_name": "Anil Kumar",
+        "mobile_number": "9876501803",
         "jobs_pending": 2,
-         "rating": 5 
+        "rating": 5
       },
-      { "contractor_name": "Manoj Chauhan",
-       "mobile_number": "9000001804",
+      {
+        "contractor_name": "Suresh Naidu",
+        "mobile_number": "9876501804",
         "jobs_pending": 5,
-         "rating": 4 
+        "rating": 4
       },
-      { "contractor_name": "Deepak Yadav",
-       "mobile_number": "9000001805",
+      {
+        "contractor_name": "Deepak Reddy",
+        "mobile_number": "9876501805",
         "jobs_pending": 9,
-         "rating": 2 
+        "rating": 2
       }
     ]
   },
+
   {
     "ward_no": "026",
     "contractors": [
-      { "contractor_name": "Harshil Pandya",
-       "mobile_number": "9000002601",
+      {
+        "contractor_name": "Harsha Vardhan",
+        "mobile_number": "9876502601",
         "jobs_pending": 6,
-        "rating": 4 
+        "rating": 4
       },
-      { "contractor_name": "Jayesh Trivedi",
-       "mobile_number": "9000002602",
+      {
+        "contractor_name": "Jayakrishna",
+        "mobile_number": "9876502602",
         "jobs_pending": 3,
-        "rating": 5 
+        "rating": 5
       },
-      { "contractor_name": "Paresh Modi",
-       "mobile_number": "9000002603",
+      {
+        "contractor_name": "Praveen Kumar",
+        "mobile_number": "9876502603",
         "jobs_pending": 8,
-        "rating": 3 
+        "rating": 3
       },
-      { "contractor_name": "Bhavesh Patel",
-       "mobile_number": "9000002604",
+      {
+        "contractor_name": "Bhaskar Rao",
+        "mobile_number": "9876502604",
         "jobs_pending": 1,
-        "rating": 5 
+        "rating": 5
       },
-      { "contractor_name": "Sanjay Thakkar",
-       "mobile_number": "9000002605",
+      {
+        "contractor_name": "Sanjay Kumar",
+        "mobile_number": "9876502605",
         "jobs_pending": 4,
-        "rating": 4 
+        "rating": 4
       }
     ]
   },
+
   {
-    "ward_no": "051",
+    "ward_no": "12",
     "contractors": [
-      { "contractor_name": "Mahesh Rana",
-       "mobile_number": "9000005101",
-        "jobs_pending": 10,
-         "rating": 3 
+      {
+        "contractor_name": "Durga Rao",
+        "mobile_number": "9876501201",
+        "jobs_pending": 5,
+        "rating": 4
       },
-      { "contractor_name": " Pravin Chaudhari",
-       "mobile_number": "9000005102",
-        "jobs_pending": 6, 
-        "rating": 4 
-     },
-      { "contractor_name": "Ashok Patel",
-       "mobile_number": "9000005103",
-        "jobs_pending": 2, 
-        "rating": 5 
-     },
-      { "contractor_name": "Dinesh Makwana",
-       "mobile_number": "9000005104",
-        "jobs_pending": 7, 
-        "rating": 3 
-     },
-      { "contractor_name": "Jignesh Bharwad",
-       "mobile_number": "9000005105",
-        "jobs_pending": 5, 
-        "rating": 4 
-     }
+      {
+        "contractor_name": "Praveen Naidu",
+        "mobile_number": "9876501202",
+        "jobs_pending": 3,
+        "rating": 5
+      },
+      {
+        "contractor_name": "Ashok Kumar",
+        "mobile_number": "9876501203",
+        "jobs_pending": 7,
+        "rating": 3
+      },
+      {
+        "contractor_name": "Dinesh Babu",
+        "mobile_number": "9876501204",
+        "jobs_pending": 2,
+        "rating": 5
+      },
+      {
+        "contractor_name": "Jagan Mohan",
+        "mobile_number": "9876501205",
+        "jobs_pending": 6,
+        "rating": 4
+      }
     ]
   }
+
 ]
